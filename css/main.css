@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+/* 初始化样式 */
+
+body, p, ul, li, h1, h2, h3, h4, h5, h6, span, form, input {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-weight: normal;
+}
+img {
+	border: none;
+}
+input[type=button],input[type=submit],input[type=search] {
+	-webkit-appearance: none;
+}
+input:focus {
+	outline: none;
+}
+button:focus {
+	outline: none;
+}
+a {
+	text-decoration: none;
+	color: #333;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+}
+html {
+	font-family: "微软雅黑";
+}
+body {
+	background-color:#fafafa;
+	width: 100%;
+}
+
+/* 初始化样式结束 */
+/* 通用样式 */
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/* 通用样式结束 */
+
+/* musicbox */
+.musicbox{
+	width: 1000px;
+	height: 700px;
+	background:rgba(0,0,0,.6);
+	margin:  50px auto;
+}
+/* musicbox end */
+
+/* m_photoframe */
+.musicbox .m_photoframe{
+    width: 50%;
+    height: 620px;
+    float: left;
+}
+.musicbox .m_photoframe .m_img{
+    width: 250px;
+    height: 250px;
+    border: 10px solid rgba(0,0,0,.1);
+    margin: 106px auto 0;
+}
+.musicbox .m_photoframe .m_img img{
+	width: 100%;
+	display: block;
+}
+
+/* m_photoframe end */
+
+/* m_word */
+.musicbox .m_word{
+    width:  50%;
+    height: 546px;
+    float: left;
+    margin-top: 74px;
+}
+.musicbox .m_word .m_music_name{
+    font-size: 30px;
+    line-height: 45px;
+    color: #fff;
+}
+.musicbox .m_word .m_music_info{width:  100%;overflow:  hidden;color: #8c8c8c;margin-top: 10px;}
+.musicbox .m_word .m_music_info .m_singer{
+    width: 180px;
+    float:  left;
+}
+
+.musicbox .m_word .m_music_info .m_album{
+    width: 200px;
+    float:  left;
+}
+.musicbox .m_word .m_music_info p>span{
+    color: #fff;
+}
+.musicbox .m_word .m_music_word{}
+
+/* m_word end */
+
+/* m_fun */
+.musicbox .m_fun{
+    width:  100%;
+    height: 80px;
+    float:  left;
+}
+.musicbox .m_fun .m_musicplay{
+    width: 19%;
+    height: 80px;
+    float:  left;
+}
+.musicbox .m_fun .m_musicplay .m_musicplaybtn{
+    margin-left: 26px;
+    margin-top: 16px;
+}
+.musicbox .m_fun .m_musicplay .m_musicplaybtn div>img{
+	width: 100%;
+	display: block;
+}
+.musicbox .m_fun .m_musicplay .m_upbtn{
+    width: 45px;
+    height: 45px;
+    float:  left;
+    margin-top: 2px;
+    cursor:pointer;
+}
+.musicbox .m_fun .m_musicplay .m_playbtn{
+    width: 50px;
+    height: 50px;
+    float:  left;
+    cursor:pointer;
+}
+.musicbox .m_fun .m_musicplay .m_downbtn{
+    width: 45px;
+    height: 45px;
+    float:  left;
+    margin-top: 2px;
+    cursor:pointer;
+}
+.musicbox .m_fun .m_progress{
+    width: 54%;
+    height: 80px;
+    float:  left;
+}
+.musicbox .m_fun .m_progress .m_img{
+    width: 80px;
+    height: 80px;
+    float:  left;
+}
+.musicbox .m_fun .m_progress .m_img img{
+	width: 100%;
+	display: block;
+}
+.musicbox .m_fun .m_progress .m_progressbox{
+    width: 85%;
+    height:  80px;
+    float:  left;
+}
+.musicbox .m_fun .m_progress .m_progressbox .m_progressbar_time{
+    width: 96%;
+    overflow:  hidden;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.musicbox .m_fun .m_progress .m_progressbox .m_progressbar_time .m_musicword{
+    width: 77%;
+    height:  30px;
+    float:  left;
+    color:  #fff;
+}
+.musicbox .m_fun .m_progress .m_progressbox .m_progressbar_time .m_musicword span{
+    color: #8c8c8c;
+}
+.musicbox .m_fun .m_progress .m_progressbox .m_progressbar_time .m_musictime{
+    width: 23%;
+    height:  30px;
+    float:  left;
+    text-align:  right;
+    color: #8c8c8c;
+}
+.musicbox .m_fun .m_progress .m_progressbox .m_progressbar{
+    width: 96%;
+    height: 20px;
+    margin-left:  20px;
+    margin-top: 12px;
+}
+.musicbox .m_fun .m_progress .m_progressbox .m_progressbar .m_progressbarbg{
+    width:  100%;
+    height:  2px;
+    background: rgba(255,255,255,.2);
+    position:  relative;
+    cursor:pointer;
+}
+.musicbox .m_fun .m_progress .m_progressbox .m_progressbar .m_progressbarbg .m_progressbar_o{
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    position:  absolute;
+    left: 0%;
+    top: -4px;
+    cursor:pointer;
+    display:  none;
+}
+.musicbox .m_fun .m_progress .m_progressbox .m_progressbar .m_progressbarbg:hover .m_progressbar_o{
+    display:  block;
+}
+.musicbox .m_fun .m_progress .m_progressbox .m_progressbar .m_progressbarbg .m_progressbars{
+    width: 0%;
+    height:  2px;
+    background: rgba(255,255,255,.7);
+}
+
+/* m_fun end */
+
+/* m_musicbtn */
+.musicbox .m_musicbtn{
+    width: 27%;
+    height:  100px;
+    float:  left;
+}
+
+/* m_musicbtn end */
+
+
